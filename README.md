@@ -49,4 +49,10 @@ Here are some key observations:
 
  ## Predictive Model
 
+A Naïve Bayes classifier was used to predict whether a tweet would be classified as depress or non-depressed. I extracted features via TF-IDF, with stop words removed and the vocabulary limited to 5000 terms. The dataset was split into 80% training and 20% testing. I then evaluated the model on accuracy, precision, recall, and F1-score.
 
+Here are the scores:
+
+![Figure 5](Figures/Figure_5.png)
+
+Although the model performed well, the recall for depressed tweets was lower, at 0.78, suggesting missed depressive tweets. Overall, this Naïve Bayes model offers a strong baseline for depression detection in tweets.
